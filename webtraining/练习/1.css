@@ -1,0 +1,27 @@
+.body1{
+	height:800px;
+	background: #673AB7;
+	background: -webkit-linear-gradient(to bottom right, #673AB7 50%, #6231b9 50%);
+	background: linear-gradient(to bottom right, #673AB7 50%, #6231b9 50%);
+	background-size:cover;
+	background-attachment: fixed;
+	font-size: 20px;
+	border: none;
+
+}
+.loginbox{
+	width: 20rem;
+	height: 15rem;
+	position:relative;
+	left:500px;
+	top:150px;
+	text-align: center;
+	background-color: #999
+}
+.loginbox input{
+	outline: none;
+	line-height: 1.3rem;
+	border-radius: 2rem;
+	margin: 1rem 0;
+	padding-left: 1rem;
+}

@@ -1,0 +1,29 @@
+.login-box{
+	text-align: center;
+	background: pink;
+	font-size: 30px;
+	margin: 0rem;
+}
+.form1 input{
+	outline: none;
+	color: #bbb;
+	background-color: rgba(250,240,240,0.5);
+	line-height: 2rem;
+	border: none;
+	border-radius: 1rem;
+	margin: 1rem 0rem;
+	padding-left: 0.6rem;
+	width: 12rem;
+}
+.form1 input[type=button]{
+	width: 5rem;
+	margin: 1rem 1rem;
+	color: #aaa;
+	font-weight: bold;
+}
+.hover{
+	background-color: rgba(240,240,240,0.5);
+}
+.hover:hover{
+	background-color: white;
+}

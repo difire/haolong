@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,mimimum-scale=1,user-scalable=no"> -->
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="outbox">
+		<div class="header flex">
+			<div class="header-img"><a href="#" onclick="blocks()"><img src="img.jpg" alt=""></a>
+			</div>
+			<form action="">
+			<div class="search flex">
+				<input id="search_input" type="text" placeholder="关键词">
+				<div class="search-history" onclick="blocks()"></div>
+				<div class="search-img" onclick="Reset()"><img src="img.jpg" alt=""></div>
+			</div>
+			</form>
+			<div class="goto">
+				</div>
+		</div>
+		<div class="notice flex">
+			<div class="notice-img"><img src="img.jpg" alt=""></div>
+			<p>每个人都要走一条自己坚定了的路，就算是粉身碎骨   爱是一种力量，让我们超越时空感知它的存在  如果再也不能见到你，祝你早安，午安，晚安  天籁一般的童声，是最接近上帝的存在   我们一路奋战不是为了改变世界，而是为了不让世界改变我们</p>
+		</div>
+		<div class="btnlist flex">
+			<input type="button" class="btnlist-btn" value="古风歌曲" onclick="blocks()">
+			<input type="button" class="btnlist-btn" value="抖音歌曲" onclick="blocks()">
+			<input type="button" class="btnlist-btn" value="英文歌曲" onclick="blocks()">
+		</div>
+		<div class="bodybox">
+
+		</div>
+		<div class="footer flex">
+			<div class="footer-l footer_active"><a href="#"><img src="img.jpg" alt=""><p>搜索</p></a></div>
+			<div class="footer-l"><a href="#"><img src="img.jpg" alt=""><p>发现</p></a></div>
+			<div class="footer-l"><a href="#"><img src="img.jpg" alt=""><p>更多</p></a></div>
+		</div>
+	</div>
+	<div class="new-block">
+		<div class="active" id="newblock" style="display:none;">
+			<div class="new-block-centent">
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var newblock=document.getElementById("newblock");
+	function blocks(){
+		newblock.style.display="block";
+	}
+	function blocks_out(){
+		newblock.style.display="none";
+	}
+	function Reset(){
+		var inputs=document.getElementById("search_input");
+		inputs.value=""
+	}
+	newblock.onclick=blocks_out;
+</script>
+</html>
